@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+section{
+
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.desc{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+.desc h1{
+
+	font-size: 5em;
+	padding: 10px;
+	color: white;
+	font-weight: 700;
+	text-shadow: -5px 0px 4px #000;
+	text-align: center;
+	animation: aumento 3s;
+ 	animation-fill-mode: forwards;
+}
+
+@keyframes aumento {
+  from {font-size: 0;}
+  to {font-size: 5em;}
+}
+
+.desc p{
+
+	font-size: 22px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	animation: opacidad 3s;
+ 	animation-fill-mode: forwards;
+}
+
+@keyframes opacidad {
+  from {transform: scale(0.5); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+button{
+
+	text-decoration: none;
+	color: black;
+	font-size: 21px;
+	padding: 10px;
+	background-color: #abdbe3;
+	border-radius: 5px;
+	margin: 10px;
+	border: none;
+	z-index: 1;
+	animation: aumentob 3s;
+}
+
+@keyframes aumentob {
+  from {transform: scale(0.5); opacity: 0.5;}
+  to {transform: scale(1); opacity: 1; background-color:#063970; color: white;}
+}
+
+button:hover{
+
+	background-color: #063970;
+	color: white;
+}
+
+.video {
+
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
