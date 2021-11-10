@@ -5,22 +5,66 @@
 	padding: 0;
 }
 
-div{
+nav{
 
-	background-color: green;
-	width: 350px;
-	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 5vh;
+	width: 100%;
+}
+
+nav a{
+
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+.titulo{
+
+	font-size: 50px;
+	font-weight: 200;
+	letter-spacing: 15px;
+	margin: 0 4em;
+	text-align: center;
+}
+
+.logo{
+
+	font-size: 55px;
+}
+
+.menu{
+
+	font-size: 55px;
+	color: black;
+}
+
+.menu a{
+
+	position: absolute;
+	text-decoration: none;
+	color: black;
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+section{
+
+	position: relative;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 
-div a{
+video{
 
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 25px;
+	position: absolute;
+	height: 60%;
+	border-radius: 15px;
+	box-shadow: 3px 9px 18px rgb(0 0 0 / 20%);
 }
