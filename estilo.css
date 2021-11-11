@@ -5,6 +5,31 @@
 	padding: 0;
 }
 
+header{
+
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+
+header h1{
+
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: 200;
+	letter-spacing: 15px;
+	color: white;
+	text-shadow: black;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
 nav{
 
 	display: flex;
@@ -13,6 +38,7 @@ nav{
 	position: fixed;
 	top: 5vh;
 	width: 100%;
+	opacity: 0;
 }
 
 nav a{
@@ -56,6 +82,7 @@ section{
 
 	position: relative;
 	height: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,7 +91,8 @@ section{
 video{
 
 	position: absolute;
-	height: 60%;
-	border-radius: 15px;
-	box-shadow: 3px 9px 18px rgb(0 0 0 / 20%);
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
