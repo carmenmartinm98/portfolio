@@ -3,6 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 header{
@@ -16,26 +17,37 @@ header{
 
 }
 
+.portada{
 
-header h1{
-
+	position: absolute;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	font-size: 50px;
 	font-weight: 200;
 	letter-spacing: 15px;
 	color: white;
-	text-shadow: black;
+	text-shadow: -3px 0px 6px #000;
 	text-align: center;
+	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
+	z-index: 1;
+	animation: opacidad 2s;
+ 	animation-fill-mode: forwards;
 }
+
+@keyframes opacidad {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
 
 nav{
 
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	top: 5vh;
 	width: 100%;
 	opacity: 0;
@@ -47,6 +59,7 @@ nav a{
 	text-decoration: none;
 	color: black;
 }
+
 
 .titulo{
 
@@ -95,4 +108,5 @@ video{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	pointer-events: auto;
 }
